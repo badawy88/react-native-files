@@ -1,10 +1,25 @@
-# react-native-files
-
+/**
+** REACT NATIVE 
+**/
 
 This project has the important files for creating react native project as well as the required commands....
 
 
-To create a new react project use the following command
+To create a new react project, you can use either expo-cli command or react-native-cli
+
+To install react-native-cli:
+
+> npm install -g react-native-cli
+
+To install expo-cli
+
+> npm install -g expo-cli
+
+To create a project using react-native-cli
+
+> react-native init project_name
+
+To create a project using expo-cli
 
 > npx expo-cli init project_name
 > npm start
