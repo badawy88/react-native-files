@@ -36,3 +36,22 @@ To use Drawer navigator, bottom navigator, and stack navigator
 > npm install react-navigation
 
 > expo install react-native-gesture-handler
+
+Sample code for app.js
+=========
+
+```javascript
+  import { createStackNavigator } from 'react-navigation';
+  import ComponentName from './src/..................'
+
+  const navigator = createStackNavigator({
+      ComponentName: ComponentClass
+  } , {
+      initialRouteName: 'ComponentName',
+      defaultNavigationOptions: {
+          title: 'Title'
+      }
+  });
+
+  export default createAppContainer( navigator );
+```
