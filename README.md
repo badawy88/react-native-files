@@ -1,6 +1,5 @@
-/**
-** REACT NATIVE 
-**/
+REACT NATIVE COMMANDS AND CODE SAMPLES
+======================================
 
 This project has the important files for creating react native project as well as the required commands....
 
@@ -38,7 +37,7 @@ To use Drawer navigator, bottom navigator, and stack navigator
 > expo install react-native-gesture-handler
 
 Sample code for app.js
-=========
+======================
 
 ```javascript
   import { createStackNavigator } from 'react-navigation';
