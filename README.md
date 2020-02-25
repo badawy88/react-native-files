@@ -22,7 +22,10 @@ To create a project using react-native-cli
 To create a project using expo-cli
 
 > npx expo-cli init project_name
+> npx create-react-app app_name
 > npm start
+> npm run build
+> npm run ios
 
 To use Drawer navigator, bottom navigator, and stack navigator
 
