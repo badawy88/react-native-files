@@ -40,17 +40,38 @@ Sample code for app.js
 ======================
 
 ```javascript
-  import { createStackNavigator } from 'react-navigation';
-  import ComponentName from './src/..................'
+  import { createAppContainer} from 'react-navigation';
+  import searchScreen from './src/searchScreen';
+  import { createStackNavigator } from 'react-navigation-stack';
 
   const navigator = createStackNavigator({
-      ComponentName: ComponentClass
-  } , {
-      initialRouteName: 'ComponentName',
-      defaultNavigationOptions: {
-          title: 'Title'
-      }
+    Search: searchScreen
+  }, {
+    initialRouteName: 'Search',
+    defaultNavigationOptions: {
+      title: 'Business Search'
+    }
+
   });
 
-  export default createAppContainer( navigator );
+  export default createAppContainer(navigator);
+```
+
+Search.js
+===========
+
+```javascript
+  import React from 'react';
+  import {Text, View} from 'react-native';
+
+  const searchScreen  = () => {
+      return (
+          <View>
+              <Text>Welcome To searchScreen</Text>
+          </View>
+      );
+  };
+
+
+  export default searchScreen;
 ```
