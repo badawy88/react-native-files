@@ -12,4 +12,5 @@ To create a new react project use the following command
 To use Drawer navigator, bottom navigator, and stack navigator
 
 > npm install react-navigation
+
 > expo install react-native-gesture-handler
