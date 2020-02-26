@@ -81,33 +81,18 @@ Project Structure
 =================
 
 project Folder
-
---.expo
-
---.expo-shared
-
---assets
-
---src
-
-  --component
-  
-    --component1
-    
-    --component2
-    
-    --componentN
-    
-  ----screens
-  
-  ------screen1
-  
-  ------screen2
-  
-  ------screenN
-  
---App.js
-
---app.json
-
---package.json
+>>  .expo
+>>>>  .expo-shared
+  assets
+  src
+    component
+    component1
+    component2
+    componentN
+  screens
+    screen1
+    screen2
+    screenN
+  App.js
+  app.json
+  package.json
