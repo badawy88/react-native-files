@@ -57,8 +57,8 @@ Sample code for app.js
   export default createAppContainer(navigator);
 ```
 
-Search.js
-===========
+Sample of normal Screen Home.js
+================================
 
 ```javascript
   import React from 'react';
