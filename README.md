@@ -1,7 +1,7 @@
 REACT NATIVE COMMANDS AND CODE SAMPLES
 ======================================
 
-This project has the important files for creating react native project as well as the required commands....
+This project has some important files for creating react native project as well as the required commands....
 
 
 To create a new react project, you can use either expo-cli command or react-native-cli
@@ -45,11 +45,11 @@ Sample code for app.js
   import { createStackNavigator } from 'react-navigation-stack';
 
   const navigator = createStackNavigator({
-    Search: searchScreen
+    Home: searchScreen
   }, {
-    initialRouteName: 'Search',
+    initialRouteName: 'Home',
     defaultNavigationOptions: {
-      title: 'Business Search'
+      title: 'App Page'
     }
 
   });
@@ -64,14 +64,35 @@ Search.js
   import React from 'react';
   import {Text, View} from 'react-native';
 
-  const searchScreen  = () => {
+  const Home  = () => {
       return (
           <View>
-              <Text>Welcome To searchScreen</Text>
+              <Text>Welcome To Home page</Text>
           </View>
       );
   };
 
 
-  export default searchScreen;
+  export default Home;
 ```
+You can use TextInput, View, Text, StyleSheet from react-native library
+
+Project Structure
+=================
+
+project
+--.expo
+--.expo-shared
+--assets
+--src
+  --component
+    --component1
+    --component2
+    --componentN
+  ----screens
+  ------screen1
+  ------screen2
+  ------screenN
+--App.js
+--app.json
+--package.json
