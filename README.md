@@ -96,3 +96,34 @@ Project Structure
    * app.json
    * package.json
 <!--te-->
+
+Use Stylesheet
+==============
+
+```javascript
+import {StyleSheet} from 'react-native';
+
+/**
+* Styles to be used as {styles.label}
+*/
+const styles = StyleSheet.create({
+  label: {
+      fontSize: 18,
+      fontWeight: 'bold',
+      marginLeft: 10
+  }  
+});
+
+// To Use this styles in a screen like Style Demo screen. Use the following code
+// To make this example work, you should import the following 
+/*  
+import {View, Text} from 'react'
+*/
+const RegistrationScreen = () => {
+  return (
+    <View>
+      <Text> Welcome to Using Sytle Demo </Text>
+    </View>
+  );
+};
+```
