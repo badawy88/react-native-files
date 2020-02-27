@@ -1,8 +1,7 @@
 REACT NATIVE COMMANDS AND CODE SAMPLES
 ======================================
 
-This project has some important files for creating react native project as well as the required commands....
-
+Learn React natvie from scratch.
 
 To create a new react project, you can use either expo-cli command or react-native-cli
 
