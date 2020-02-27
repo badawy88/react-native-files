@@ -127,3 +127,23 @@ const RegistrationScreen = () => {
   );
 };
 ```
+
+Using Icons
+===========
+
+To use built in library of fonts which exists in expo-cli (https://expo.github.io/vector-icons), follow the following instruction:
+
+each icon has icon library and icon name
+
+Ex: FontAwesome library has search icon. We will use search icon from FontAwesome library in the following example
+
+```javascript
+// First import the following. 
+// FontAwesome is library name
+// '@expo/vector-icons' is icon set
+impot { FontAwesome } from '@expo/vector-icons';
+
+// use search from FontAwsome library
+<FontAwesome name="search" />
+```
+
