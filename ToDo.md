@@ -40,3 +40,12 @@ const UseSearchComponent = () => {
   );
 };
 ```
+
+HTTP Request
+=============
+
+You can send request using either fetch library which is built-in in react native or by install axios library. Axios is easy to use and less code to write.
+
+Install Axios: 
+
+> npm install axios
