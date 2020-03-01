@@ -34,7 +34,7 @@ const UseSearchComponent = () => {
       <SearchComponent 
         text={text} 
         onTextChange = { newText => setText(newText) } 
-        onCompleteEditing = { () => console.log('term was submitted') }
+        onTextSubmit = { () => console.log('text is submitted') }
         />
     </View>
   );
@@ -49,3 +49,43 @@ You can send request using either fetch library which is built-in in react nativ
 Install Axios: 
 
 > npm install axios
+
+Create a service folder
+
+```javascript
+
+// api.js
+
+import axios from 'axios';
+
+export default axios.create({
+  baseURL:  'https://api.yelp.com/v3/businesses/' ,
+  headers: {
+    Authorization: 'Bearer xxxxxx_api_key'
+  }
+});
+```
+
+Use api.js 
+===========
+
+```javascript
+// import first api.js
+
+const searchApi = async () => {
+  cnst response = await yelp.get('search' , {
+    params: {
+      term: text,
+      limit: 50,
+      location: 'Cairo'
+    }
+  });
+  
+  return response.data
+};
+
+const [results , setResults ] = useState( [] );
+
+onTextSubmit = { () => searchApi }
+
+```
