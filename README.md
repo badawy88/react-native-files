@@ -145,4 +145,9 @@ impot { FontAwesome } from '@expo/vector-icons';
 // use search from FontAwsome library
 <FontAwesome name="search" />
 ```
+Stop Auto Capitalize and Auto Correct from TextInput Field
+======================================================
 
+```javascript
+<TextInput autoCapitalize="none" autoCorrect={false} />
+```
