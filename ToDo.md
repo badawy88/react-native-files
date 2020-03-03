@@ -81,11 +81,11 @@ const searchApi = async () => {
     }
   });
   
-  return response.data
+  setResults(response.data.businesses);
 };
 
 const [results , setResults ] = useState( [] );
-
-onTextSubmit = { () => searchApi }
+// Modiy search component to the below code
+onTextSubmit = { () => searchApi() }
 
 ```
